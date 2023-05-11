@@ -10,7 +10,7 @@ class Skeema < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dashhudson/skeema/releases/download/v1.10.0/skeema_1.10.0_mac_arm64.tar.gz"
-      sha256 "d878545b89dd237d5a415ac606382e5f9efebf36bfadf90cc26c68b5cd563069"
+      sha256 "d18bafe441dc9ee7d4a3fb9a82343b4cfa6176f23d71df0263a23e64c31a5f9c"
 
       def install
         bin.install "skeema"
@@ -18,7 +18,7 @@ class Skeema < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/dashhudson/skeema/releases/download/v1.10.0/skeema_1.10.0_mac_amd64.tar.gz"
-      sha256 "7adf63488afeb17e256f2c05a55c114d374af9be4dfc7e72565e05a3ba6dc356"
+      sha256 "442823a5758062a220620186c812ef73b61e9d35072179f2fee4ef770399d6a7"
 
       def install
         bin.install "skeema"
@@ -29,7 +29,7 @@ class Skeema < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dashhudson/skeema/releases/download/v1.10.0/skeema_1.10.0_linux_arm64.tar.gz"
-      sha256 "fb9ee0d3d318242d4dc94b8538d07f5c84ebb6132b6e6a90c21951347ce5d79d"
+      sha256 "f72cf930142c38a4f5a8e0a714ea9a010aba6c2f78ce07aafb694833c0eebb06"
 
       def install
         bin.install "skeema"
@@ -37,7 +37,7 @@ class Skeema < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/dashhudson/skeema/releases/download/v1.10.0/skeema_1.10.0_linux_amd64.tar.gz"
-      sha256 "4b89c2f1dbd67003bf702486f5e20d4f3c3e9907cc064a523abc054dbe9fd920"
+      sha256 "6ef6321dc11ee1ecf0824c21df9b29a6f2254cd379384187f866070c0e29a0af"
 
       def install
         bin.install "skeema"
